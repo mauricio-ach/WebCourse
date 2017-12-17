@@ -2,30 +2,115 @@
     <head>
         <meta charset="utf-8">
         <title>Ejercicio 2</title>
-        <link rel="stylesheet" href="lib/css/estilosejercicio2.css">
+        <style>
+            .tablacolapso {
+                width: 100%;
+                border-collapse: collapse;
+                border: "1";
+            }
+
+            table {
+                width: 100%;
+            }
+
+            h3 {
+                color: antiquewhite; 
+            }
+            
+            div{
+                width: 100%;
+                color: #FFF;
+            }
+
+            .fila1 {
+                background-color: red;
+            }
+
+            .textoderecha1 {
+                background-color: blue;
+            }
+
+            .fila3 {
+                background-color: limegreen;
+            }
+
+            .textoderecha1, .textoderecha2, .div2 {
+                text-align: right;
+            }
+
+            .fila4 {
+                background-color: aquamarine;
+            }
+
+            .textoderecha2 {
+                background-color: dimgray;
+            }
+
+            .fila6 {
+                background-color: floralwhite;
+            }
+
+            .div1{
+                background-color: chartreuse;
+                border: 5px;
+            }
+
+            .div2{
+                background-color: darkgoldenrod;
+            }
+
+            .div3{
+                background-color: darkviolet;
+            }    
+            
+            .tabla3{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            
+            body{
+                padding: 10% 5%;   
+            }
+        </style>
     </head>
-    <body style="background-color: bisque">
+    <body style="background-color:crimson ">
         <h3>ej 1: con 1 tabla:</h3>
-        <table border="1">
+        <table class="tablacolapso">
             <tr>
-                <td class="f1">fila 1</td>
+                <td class="fila1">fila 1</td>
             </tr>
             <tr>
-                <td class="f2">fila 2</td>
+                <td class="textoderecha1">fila 2</td>
             </tr>
             <tr>
-                <td class="f3">fila 3</td>
+                <td class="fila3">fila 3</td>
             </tr>
         </table>
         <h3>ej 2: con 3 tablas</h3>
-        <table>
+        <table border="2">
             <tr>
-                <td></td>
+                <td class="fila4">fila 1</td>
             </tr>
         </table>
-        <table>
+        <table border="2" class="tabla3">
+            <tr>
+                <td class="textoderecha2">fila 2</td>
+            </tr>
         </table>
-        <table>
+        <table border="2">
+            <tr>
+                <td class="fila6">fila 3</td>
+            </tr>
         </table>
+        <h3>ej 3: con 3 divs</h3>
+        <div class="div1">
+            div 1
+        </div>
+        <div class="div2">
+            div 2
+        </div>
+        <div class="div3">
+            div 3
+        </div>
     </body>   
 </html>

@@ -1,0 +1,70 @@
+table {
+    width: 100%;
+}
+
+td {
+    width: 100;
+}
+
+.inicio:hover, .cursos:hover, .quienes:hover, .login:hover, .contacto:hover {
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: dodgerblue;
+    color: #FFF;
+}
+
+.logo {
+    padding-bottom: 1%;
+    width: 25%;
+}
+
+.inicio, .cursos, .login, .contacto {
+    width: 10;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.quienes {
+    width: 25%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.textoBlueBits {
+    font-size: 60px;
+    text-align: center;
+}
+
+.textopequeno {
+    padding-right: 8%;
+    text-align: center;
+}
+
+.imagencentral {
+    padding: 5% 0% 0% 15%;
+    width: 60%;
+}
+
+.desarrollo, .disweb, .php {
+    padding-top: 5%;
+    text-align: center;
+    color: dodgerblue;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.lorem1, .lorem2, .lorem3 {
+    padding: 3% 5%;
+    text-align: justify;
+}
+
+.link1, .link2, link3 {
+    padding-left: 5%; 
+}
+
+.footer {
+    background-color: dodgerblue;
+    text-align: center;
+    color: #fff;
+    height: 45px;
+}
