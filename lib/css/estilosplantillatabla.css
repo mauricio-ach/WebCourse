@@ -1,0 +1,66 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFF;
+}
+
+body {
+    padding: 0% 10%;
+    background-color: #E3E3E3FF;
+    font-family: Century Gothic;
+}
+
+.logo img{
+	padding-left: 3%;
+	width: 70%;
+}
+
+img {
+	width: 60%;
+	padding: 5%;
+	margin-left: 15%;
+}
+
+div {
+	float: left;
+	margin: 2% 3%;
+	padding: 2%;
+}
+
+div:hover {
+	cursor: pointer;
+	color: #FFF;
+	background-color: #1B7396;
+	border-radius: 10px;
+}
+ .informacion {
+ 	text-align: center;
+ 	color: lightslategray;
+ 	height: 300px;
+ }
+
+ h1 {
+ 	font-size: 40px;
+ 	margin-top: 10%;
+ }
+
+ h6 {
+	margin: -10%;
+ }
+
+ h3 {
+ 	text-align: center;
+ 	color: #1B7396;
+ }
+
+ .cursos {
+ 	text-align: justify;
+ 	padding: 1%;
+ }
+
+ .pie {
+ 	background-color: #1B7396;
+ 	color: #FFF;
+ 	text-align: center;
+ 	height: 50px;
+ }
