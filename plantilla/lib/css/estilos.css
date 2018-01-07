@@ -1,0 +1,31 @@
+ul {
+	list-style-type: none;
+	overflow: hidden; 
+	margin-left: 20%;
+}
+
+li {
+	float: left;
+	display: block;
+	padding: 3%;
+}
+
+li:hover {
+	background-color: #0FFFF7FF;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	margin-top: 20%;
+}
+
+h3, .texto-pie {
+	text-align: center;
+}
+
+p {
+	text-align: justify;
+}

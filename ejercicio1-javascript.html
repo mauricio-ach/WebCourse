@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicios</title>
+</head>
+<body>
+	Introduce un día: <input id = "dia">
+	<button onclick="verificarDia()">Verifica</button>
+	<br> <br>
+	Introduce el primer número: <input id = "num1">
+	<br><br>
+	Introduce el segundo número: <input id = "num2">
+	<br><br>
+	<button onclick="suma()">Sumar</button>
+	<button onclick="compara()">Comparar</button>
+	<br><br>
+	Introduce la califación: <input id = "cal">
+	<button onclick="evalua()">Evaluar</button>
+	<script>
+		
+		function evalua() {
+			var califacion = parseInt(document.getElementById("cal").value);
+			if(califacion == 0 || califacion == 1 || califacion == 2 || califacion == 3){
+				alert(Repetir clase!);
+			} else if(califacion == 4 || califacion == 5) {
+				alert()
+			}
+		}
+
+		function verificarDia() {
+			var dia = document.getElementById("dia").value;
+			if(dia == "Lunes" || dia == "Martes" || dia == "Miércoles" || dia == "Jueves" || dia == "Viernes"){
+				alert("Hoy se labora! :(");
+			} else if (dia == "Sábado" || dia == "Domingo") {
+				alert("Día de descanso! :)");
+			} else {
+				alert("Día erróneo !!");
+			}
+		}
+
+		function suma() {
+			var num1 = parseInt(document.getElementById("num1").value);
+			var num2 = parseInt(document.getElementById("num2").value);
+			var resultado = num1 + num2;
+			alert("El resultado es: " + resultado);
+		}
+
+		function compara(){
+			var num1 = parseInt(document.getElementById("num1").value);
+			var num2 = parseInt(document.getElementById("num2").value);
+
+			if(num1 == num2){
+				alert("Los números son iguales");
+			} else if (num1 > num2){
+				alert("El número más grande es: " + num1);
+			} else {
+				alert("El número más grande es: " + num2);
+			}
+		}
+
+	</script>
+</body>
+</html>

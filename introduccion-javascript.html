@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Introduccion JavaScript</title>
+    <link rel="stylesheet" href="lib/css/estilostarea1.css">
+</head>
+
+<body>
+    <div id="div1">
+        Contenedor de texto
+    </div>
+    <button onclick="cambiarTexto()">Cambiar texto</button>
+    Nombre: <input id="nombre">
+    <button onclick="hacerSaludo()">Saludar</button>
+    <button onclick="verificarAcceso()">Acceso</button>
+    <br>
+    <br>
+    <div id="caja" onmouseover="cambiarCaja()">
+        Hola
+    </div>
+    <script>
+
+    	function verificarAcceso() {
+    		var nombre = document.getElementById("nombre").value;
+    		if(nombre == "Mauricio" || nombre == "Juan"){
+    			alert("Bienvenido: " + nombre);
+    		} else {
+    			alert("Acceso denegado");
+    		}
+    	}
+
+	    function cambiarCaja() {
+    	    document.getElementById("caja").innerHTML = "Nuevo Texto";
+   		 }
+
+	    function hacerSaludo() {
+    	    var texto = document.getElementById("nombre").value;
+        	alert("¡Hola " + texto + "!")
+    	}
+
+    	function cambiarTexto() {
+        	document.getElementById("div1").innerHTML = "Bienvenido";
+    	}
+
+    	function ejecutarAlerta() {
+        	var x;
+        	x = confirm("¿Eres mayor de edad?");
+        	alert(x);
+        	console.log("hola");
+    	}
+    //ejecutarAlerta();
+    </script>
+</body>
+
+</html>

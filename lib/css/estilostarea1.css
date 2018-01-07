@@ -6,6 +6,11 @@ td {
     width: 100;
 }
 
+#caja {
+    width: 20%;
+    background-color: red;
+}
+
 .inicio:hover, .cursos:hover, .quienes:hover, .login:hover, .contacto:hover {
     border-radius: 10px;
     cursor: pointer;
