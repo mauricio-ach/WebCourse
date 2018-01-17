@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Introducción jQuery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+</head>
+
+<body>
+
+	<button id="boton">Da Click</button>
+	<div id="caja" style="width: 30%; background-color: red; height: 200px">
+		---
+	</div>
+	<div id="caja2" style="width: 30%; background-color: blue; height: 200px; display: block;">
+		---
+	</div>
+	<div id="caja3" style="width: 30%; background-color: yellow; height: 200px; display: block">
+		---
+	</div>
+
+	<input id="texto" value="hola">
+	<button id="cssnuevo">cambiar css</button>
+	<button id="bfadein">Ver FadeIn</button>
+	<button id="animacion">Animacion</button>
+
+	<hr>
+
+	<p id="tema" style="border: 2px black solid">Tema</p>
+	<p id="info" style="display: none;border: 2px black solid">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+	<!--
+	<script src="lib/jQuery/jquery-3.2.1.js">
+	</script>
+	-->
+	<script>
+		$("#boton").click(function(){
+			var txt = $("#texto").val();
+			alert(txt);
+		});
+
+		$("#caja").mouseenter(function(){
+			$("#caja").hide(500);
+		});
+
+		$("#caja2").mouseleave(function() {
+			$("#caja").show(250);
+		});
+
+		$("#bfadein").click(function(event) {
+			$("#caja3").fadeOut(1000);
+		});
+
+		$("#cssnuevo").click(function(event) {
+			$("#caja2").css({backgroundColor:"#000", width:"20%"})
+		});
+
+		$("#tema").click(function() {
+			$("#info").slideDown(1000);
+		});
+
+		$("#tema").mouseleave(function(event) {
+			$("#info").slideUp(1000);
+		});
+
+		$("#animacion").click(function(event) {
+			$("#caja3").animate({width:"70%", marginLeft:"20%"});
+		});
+		/** @media handheld, onlyscreen and (max-width: 786) {}*/
+
+	</script>
+</body>
+
+</html> 

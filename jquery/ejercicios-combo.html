@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio JavaScript</title>
+</head>
+
+<body>
+	Ejercicio 1 <br>
+	<select id="semana" onchange="validarDia()">
+		<option selected>Seleccionar...</option>}
+		<option value="lunes">Lunes</option>
+		<option value="martes">Martes</option>
+		<option value="miercoles">Miércoles</option>
+		<option value="jueves">Jueves</option>
+		<option value="viernes">Viernes</option>
+		<option value="sabado">Sábado</option>
+		<option value="domingo">Domingo</option>
+	</select>
+	
+	<hr>
+
+	Ejercicio 2 <br>
+	Número 1: <input type="text" id="n1" pattern="[0-9]{1,}" title="Sólo números">
+	Número 2: <input type="text" id="n2">
+	<button onclick="sumarNumeros()">Sumar</button>
+
+	<script>
+		
+		function validarDia() {
+			var dia = document.getElementById("semana").value;
+			if(dia == "lunes" || dia == "martes" || dia == "miercoles" || dia == "jueves"
+				|| dia == "viernes"){
+				alert("Día laboral");
+			} else if(dia == "sabado" || dia == "domingo") {
+				alert("Día de descanso");
+			} else {
+				alert("Selecciona un día");
+			}
+		}
+
+		function sumarNumeros() {
+			var numero1 = parseInt(document.getElementById("n1").value);
+			var numero2 = parseInt(document.getElementById("n2").value);
+
+			alert(numero1 + numero2);
+		}
+
+	</script>
+
+</body>
+
+</html>

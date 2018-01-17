@@ -1,0 +1,15 @@
+body {
+	background-color: #969696FF !important;
+}
+
+div {
+	border: 1px solid black;
+}
+
+.container {
+	background-color: #FFF !important;
+}
+
+.logo {
+	width: 60%;
+}
